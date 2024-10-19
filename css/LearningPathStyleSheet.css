@@ -1,0 +1,36 @@
+﻿body{
+    align-content:center;
+}
+
+.container {
+    align-content: center;
+    text-align: center;
+}
+
+svg{
+    height:380px;
+}
+
+
+/*CSS to add glow*/
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 5px yellow);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 50px darkyellow);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px yellow);
+    }
+}
+
+circle {
+    fill: lightyellow; /* No fill inside the circle */
+    stroke: yellow; /* Yellow stroke (border) */
+    stroke-width: 1; /* Stroke width */
+    filter: drop-shadow(0 0 10px yellow); /* Glowing effect */
+    cursor:pointer;
+}

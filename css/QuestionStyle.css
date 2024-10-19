@@ -1,0 +1,24 @@
+﻿/* Ensure the body and html take up the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set up the container for the image */
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100%; /* Ensure container takes up full height */
+}
+
+/* Image resizing */
+img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}

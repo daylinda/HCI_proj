@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing-Page</title>
+    <link rel="stylesheet" href="css/LayoutStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Vartalaap</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#" class="nav-link" data-target="home">Welcome</a></li>
+                <li><a href="#" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+                <!--<li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <iframe id="innerIframe" src="index.html" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+      
+
+        <section id="levelChecker" style="display:none;">
+            <iframe src="questionaire.html" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup()">
+    </main>
+
+     <!--Popup container (initially hidden)--> 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup')">&times;</span>
+            <p>Adjust the settings</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved to with HCI group 24</p>
+    </footer>
+    <script src="js/JavaScript.js"></script>
+    <script src="js/LayoutScript.js"></script>
+</body>
+</html>

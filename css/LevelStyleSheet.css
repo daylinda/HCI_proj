@@ -1,0 +1,93 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.recommended {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    vertical-align:middle;
+    
+}
+h3{
+    margin-top:50px;
+}
+
+    .recommended img {        
+        vertical-align: middle;
+        width :70px;
+        height:64px;
+}
+
+.bttn {
+    padding: 15px 30px;
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;    
+    display: block;=
+    
+}
+    .bttn:hover {
+        background-color: none;
+        border-color: black;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: larger;
+        color: black;
+        position: relative;
+    }
+
+.level-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+    .level-buttons button {
+        
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        position: relative;
+    }
+
+        .level-buttons button:hover {
+            background-color: none;
+            border-color: black ;
+            border-style:solid;
+            border-radius: 5px;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: larger;
+            color: black;
+            position: relative;
+        }
+
+        /* Move odd buttons upwards */
+        .level-buttons button:nth-child(odd) {
+            transform: translateY(-20px); /* Moves odd buttons upwards */
+        }
+
+        /* Keep even buttons in normal position */
+        .level-buttons button:nth-child(even) {
+            transform: translateY(20px); /* Moves even buttons downwards */
+        }
+
