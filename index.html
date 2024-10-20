@@ -6,33 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Vartalaap</title>
     <link rel="stylesheet" href="css/IndexStyle.css">
+    <link rel="stylesheet" href="css/LayoutStyle.css">
 </head>
 <body>
+    <header>
+        <h1>Vartalaap</h1>
+        <nav>
+            <ul>
 
-   
+                <li><a href="index.html" class="nav-link" data-target="home">Welcome</a></li>
+                <li><a href="questionaire.html" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+            </ul>
+        </nav>
+        <button id="login-bttn" onclick="showLoginPopup()">LogIn</button>
+    </header>
 
-    <div class="wrapper">
-        <div class="main">
-            <img src="images/fox.gif" class="gif-left" alt="Fox GIF">
-            <div class="welcome-text">
-                <h1>Welcome To</h1>
-                <h1 class="vartalaap">VARTALAAP</h1>
+    <main>
+
+        <section style="display:block;">
+            <div class="wrapper">
+                <div class="main">
+                    <img src="images/fox.gif" class="gif-left" alt="Fox GIF">
+                    <div class="welcome-text">
+                        <h1>Welcome To</h1>
+                        <h1 class="vartalaap">VARTALAAP</h1>
+                    </div>
+                </div>
+
+                <h2>Select the language</h2>
+
+                <div class="language-options">
+                    <a href="englishlevel.html"><div class="english">ENGLISH</div></a>
+                    <a href="hindilevel.html"><div class="hindi">HINDI</div></a>
+                    <a href="spanishlevel.html"><div class="spanish">SPANISH</div></a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h2>Select the language</h2>
+        <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
+    </main>
 
-        <div class="language-options">
-            <a href="level.html?bgColor=ccffcc"><div class="english">ENGLISH</div></a>
-            <a href="level.html?bgColor=ffcc99"><div class="hindi">HINDI</div></a>
-            <a href="level.html?bgColor=ff9999"><div class="spanish">SPANISH</div></a>
+    <!--Popup container (initially hidden)-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup')">&times;</span>
+            <p id="popup-text"></p>
         </div>
     </div>
 
 
-   
+    <!--Popup container (initially hidden)-->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('login-popup')">&times;</span>
+            <img src="images/loginpage.jpeg"/>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved to with HCI group 24</p>
+    </footer>
     <script src="js/JavaScript.js"></script>
-
-
+    <!--<script src="js/LayoutScript.js"></script>-->
 </body>
 </html>

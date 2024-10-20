@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Path</title>
     <link rel="stylesheet" href="css/LearningPathStyleSheet.css" />
+    <link rel="stylesheet" href="css/LayoutStyle.css">
 </head>
 <body>
+	<header>
+		<h1>Vartalaap</h1>
+		<nav>
+			<ul>
 
-    <div class="container">
-		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="100%" viewBox="0 0 1017 576" enable-background="new 0 0 1017 576" xml:space="preserve">
+				<li><a href="index.html" class="nav-link" data-target="home">Welcome</a></li>
+				<li><a href="questionaire.html" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+		<div class="container">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="100%" viewBox="0 0 1017 576" enable-background="new 0 0 1017 576" xml:space="preserve">
 <path fill="#FFFFFF" opacity="1.000000" stroke="none"
 	  d="
 M638.000000,577.000000
@@ -2802,32 +2815,51 @@ M691.049316,309.666931
 	C697.584900,310.740356 695.963806,312.772400 695.788269,312.695923
 	C694.161987,311.987305 692.667114,310.977356 691.049316,309.666931
 z" />
-		<circle cx="170" cy="480" r="25" id="start" />
-		<circle cx="305" cy="380" r="25" />
-		<circle cx="390" cy="240" r="25" />
-		<circle cx="530" cy="170" r="25" />
-		<circle cx="645" cy="260" r="25" />
-		
 
-		<!--<circle cx="78" cy="524" r="25"   />
-		<circle cx="170" cy="480" r="25"  />
-		<circle cx="240" cy="425" r="25" />
-		<circle cx="305" cy="380" r="25" />
-		<circle cx="360" cy="320" r="25" />
-		<circle cx="390" cy="240" r="25" />
-		<circle cx="440" cy="180" r="25" />
-		<circle cx="530" cy="170" r="25" />
-		
-		<circle cx="610" cy="205" r="25" />
-		<circle cx="645" cy="260" r="25" />
-		<circle cx="675" cy="325" r="25" />-->
+	<circle cx="170" cy="480" r="25" id="start">
+		<title>You completed this stop!</title>
+	</circle>
+	<circle cx="305" cy="380" r="25">
+		<title>You completed this stop!</title>
+	</circle>
+	<circle cx="390" cy="240" r="25">
+		<title>You completed this stop!</title>
+	</circle>
 
+			<!--<circle cx="305" cy="380" r="25" />
+			<circle cx="390" cy="240" r="25" />-->
+	<circle cx="530" cy="170" r="25">
+		<title>You completed this stop!</title>
+	</circle>
+	<circle cx="645" cy="260" r="25">
+		<title>You need to complete this stop!</title>
+	</circle>
+			<polygon points="645,260 625,210 665,210" fill="green" />
+			<text x="-350" y="50" font-size="30" fill="black">Learning Path</text>
+<text x="-350" y="80" font-family="Arial" font-size="25" fill="gray">You are doing great</text>
 
 
 </svg>
 
 
-    </div>
+		</div>
+
+
+		<img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
+	</main>
+
+	<!--Popup container (initially hidden)-->
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closePopup('popup')">&times;</span>
+			<p id="popup-text"></p>
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy; All rights reserved to with HCI group 24</p>
+	</footer>
+	<script src="js/JavaScript.js"></script>
 	<script src="js/LearningPathJavaScript.js"></script>
 
 </body>

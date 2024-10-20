@@ -4,9 +4,66 @@
     <meta charset="utf-8" />
     <title>Questions to determine level</title>
      <link rel="stylesheet" href="css/QuestionStyle.css"/>    
-    
+     <link rel="stylesheet" href="css/LayoutStyle.css">
 </head>
 <body>
-    <img src="images/questionmark.gif" alt="Question Mark" class="resize-img"/>
+    <header>
+        <h1>Vartalaap</h1>
+        <nav>
+            <ul>
+
+                <li><a href="index.html" class="nav-link" data-target="home">Welcome</a></li>
+                <li><a href="questionaire.html" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <section class="language-selection" style="display:block;">
+            <form>
+                <h3>Select your language:</h3>
+                <div class="radio-select">
+                    <label>
+                        <input type="radio" name="language" value="english">
+                        English
+                    </label><br>
+                    <label>
+                        <input type="radio" name="language" value="spanish">
+                        Spanish
+                    </label><br>
+                    <label>
+                        <input type="radio" name="language" value="hindi">
+                        Hindi
+                    </label>
+                </div>
+            </form>
+        </section>
+        <section style="display:block;" class="center-container">
+            <img class="image-container" src="images/questionmark.gif" alt="Question Mark" />     
+        </section>
+         <section style="display:block;" class="center-container-2">
+            <button>save</button>
+        </section>
+        
+
+
+
+
+        <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
+    </main>
+
+    <!--Popup container (initially hidden)-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup')">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved to with HCI group 24</p>
+    </footer>
+    <script src="js/JavaScript.js"></script>
+    
 </body>
 </html>

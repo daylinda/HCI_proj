@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Decision</title>
+    <link rel="stylesheet" href="css/LevelStyleSheet.css">
+    <link rel="stylesheet" href="css/LayoutStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Vartalaap</h1>
+        <nav>
+            <ul>
+
+                <li><a href="index.html" class="nav-link" data-target="home">Welcome</a></li>
+                <li><a href="questionaire.html" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section style="display:block;">
+        <div class="container">
+            <h1>Learn Hindi</h1>
+            <h4>Pick your level!</h4>
+
+            <div class="level-buttons">
+                <div class="image-container">
+                    <img src="images/seeker.PNG" class="bttn" onclick="openPath('hindilearningpath.html')" />
+                    <div class="hover-text">Seeker</div>
+                </div>
+                <div class="image-container">
+                    <img src="images/explorer.PNG" class="bttn" onclick="openPath('hindilearningpath.html')" />
+                    <div class="hover-text">Explorer</div>
+                </div>
+                <div class="image-container">
+                    <img src="images/challenger.PNG" class="bttn" onclick="openPath('hindilearningpath.html')" />
+                    <div class="hover-text">Challenger</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/veteran.PNG" class="bttn" onclick="openPath('hindilearningpath.html')" />
+                    <div class="hover-text">Veteran</div>
+                </div>
+                <div class="image-container">
+                    <img src="images/enlightened.png" class="bttn" onclick="openPath('hindilearningpath.html')" />
+                    <div class="hover-text">Explorer</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
+
+
+    <!--Popup container (initially hidden)-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup')">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p>&copy; All rights reserved to with HCI group 24</p>
+    </footer>
+
+    <script src="js/LevelScript.js"></script>
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>

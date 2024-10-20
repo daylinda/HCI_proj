@@ -13,7 +13,9 @@
     // Function to show the selected section
     function showSection(targetId) {
         hideAllSections(); // Hide all sections first
+
         const targetSection = document.getElementById(targetId);
+        
         targetSection.style.display = 'block'; // Show the targeted section
     }
 

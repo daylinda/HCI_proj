@@ -1,24 +1,64 @@
-﻿/* Ensure the body and html take up the full height */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+﻿
+.image-container {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Set up the container for the image */
-.image-container {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100%; /* Ensure container takes up full height */
-}
 
 /* Image resizing */
 img {
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    object-fit: cover; 
+    
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.center-container-2 {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+
+button{
+    border:solid;
+    border-color:rebeccapurple;
+    background-color:transparent;
+    padding:10px;
+    color:rebeccapurple;
+    cursor:pointer;
+}
+
+
+.language-selection {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+    .language-selection h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    .language-selection label {
+        
+        margin-right: 15px;
+        font-size: 1.1em;
+        margin-left:5px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:5px;
+    }
+
+.radio-select{
+    display:inline-flex;
 }

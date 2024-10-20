@@ -5,7 +5,8 @@
     justify-content: center; /* Ensure everything is centered vertically */
     height: auto;
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
+    overflow-y: auto; /* Enables vertical scrollbar */
 }
 
 /* Styling for the header area */
@@ -14,9 +15,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom:20px;
     height: 200px; /* Adjust height as necessary */
+
 }
 
 /* Styling for the welcome text */
@@ -89,47 +91,21 @@ body {
     .language-options .hindi {
         background-color: #ffcc99;
     }
-        .language-options .hindi {
+        .language-options .hindi:hover {
             font-size: x-large;
         }
 
     .language-options .spanish {
         background-color: #ff9999;
     }
-        .language-options .spanish {
+        .language-options .spanish:hover {
             font-size: x-large;
         }
 
 
 
 
-/* Styling for the Sign In and Register buttons at the top-right corner */
-.auth-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px; /* Space between the buttons */
-}
 
-    /* Styling for individual buttons similar to the language buttons */
-    .auth-buttons .btn {
-        padding: 10px 15px;
-        background-color: #ffcc99; /* Same as the Hindi button */
-        color: black;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-        /* Hover effect for buttons */
-        .auth-buttons .btn:hover {
-            background-color: #ff9999; /* Same as the Spanish button on hover */
-        }
 
 
 

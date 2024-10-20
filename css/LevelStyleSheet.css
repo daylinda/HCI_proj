@@ -5,9 +5,14 @@ body {
     background-color: white;
 }
 
+
 .container {
     margin-top: 10px;
 }
+
+    .container h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
 .recommended {
     display:flex;
@@ -56,6 +61,23 @@ h3{
     flex-wrap: wrap;
     margin-top: 30px;
 }
+
+    
+    .level-buttons img {
+        width: auto;
+        height: 200px;
+    }
+
+
+    /* Move odd buttons upwards */
+        .level-buttons .image-container:nth-child(odd) {
+            transform: translateY(-20px); /* Moves odd buttons upwards */
+        }
+
+    /* Keep even buttons in normal position */
+        .level-buttons .image-container:nth-child(even) {
+            transform: translateY(20px); /* Moves even buttons downwards */
+        }
 
     .level-buttons button {
         

@@ -8,48 +8,92 @@
     <link href="css/LayoutStyle.css" rel="stylesheet"/>
 </head>
 <body>
+    <header>
+        <h1>Vartalaap</h1>
+        <nav>
+            <ul>
 
-    <div class="container">
-        <div class="tutors">
-            <div>
-                <img class="icons" src="images/human_tutor.png" alt="human tutor" onclick="showPopup()" />
+                <li><a href="index.html" class="nav-link" data-target="home">Welcome</a></li>
+                <li><a href="questionaire.html" class="nav-link" data-target="levelChecker">Check your level!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tutors">
+                <div>
+                    <img class="icons" src="images/human_tutor.png" alt="human tutor" onclick="showHumanPopup('human')" />
+
+                </div>
+                <div>
+                    <img class="icons" src="images/ai_tutor.png" alt="ai tutor" onclick="showAiPopup('ai')" />
+
+                </div>
 
             </div>
             <div>
-                <img class="icons" src="images/ai_tutor.png" alt="ai tutor" onclick="showPopup()"/>
-
+                <img class="icons" src="images/playlist.png" alt="playlist" onclick="showPlaylistPopup('playlist')" />
             </div>
 
         </div>
-        <div>
-            <img class="icons" src="images/playlist.png" alt="playlist" onclick="showPopup()" />
+
+        <div class="container-2">
+            <div class="video">
+                Video
+            </div>
+            <div class="quiz-game">
+                Quiz / Game
+            </div>
         </div>
 
-    </div>
-
-    <div class="container-2">
-        <div class="video">
-            Video
+        <div class="cheat-sheet">
+            Cheat sheet
         </div>
-        <div class="quiz-game">
-            Quiz / Game
-        </div>
-    </div>
 
-    <div class="cheat-sheet">
-        Cheat sheet
-    </div>
+
+        <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
+    </main>
 
     <!--Popup container (initially hidden)-->
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="closePopup('popup')">&times;</span>
-            <p>Tutor Chat/ Add playlist</p>
+            <p id="popup-text"></p>
         </div>
     </div>
 
-    <script src="js/JavaScript.js"></script>
+    <!--Popup container (initially hidden)-->
+    <div id="playlist-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('playlist-popup')">&times;</span>
+            <img src="images/play.png"/>
+            <p id="popup-text">Add/create playlist</p>
+        </div>
+    </div>
 
+    <!--Popup container (initially hidden)-->
+    <div id="ai-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('ai-popup')">&times;</span>
+            <img src="images/Ai_chat.gif" />
+            <p id="popup-text">Chat with AI tutor</p>
+        </div>
+    </div>
+
+    <!--Popup container (initially hidden)-->
+    <div id="human-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('human-popup')">&times;</span>
+            <img src="images/people_chat_3.gif" />
+            <p id="popup-text">Chat with expert</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved to with HCI group 24</p>
+    </footer>
+    <script src="js/JavaScript.js"></script>
 
 </body>
 </html>
