@@ -36,6 +36,11 @@ function showGroupPopup() {
 
     document.getElementById('group-popup').style.display = 'block';
 }
+function showFindFriendPopup() {
+    document.getElementById('group-popup').style.display = 'none';
+
+    document.getElementById('ff-popup').style.display = 'block';
+}
 
 function showAiPopup() {
 
@@ -52,6 +57,7 @@ function showPlaylistPopup() {
 
 // Close any popup
 function closePopup(popupId) {
+    
     document.getElementById(popupId).style.display = 'none';
 }
 

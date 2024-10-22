@@ -4,7 +4,7 @@
 
 .container {
     display: flex;
-    gap: 850px;
+    gap: 100px;
     margin: 10px;
     justify-content:center;
 }
@@ -18,7 +18,7 @@
 
 .tutors {
     display: flex;
-    gap:50px;
+    gap:10px;
     justify-content: space-between;
 }
 
@@ -54,4 +54,10 @@ main {
     max-height: 80vh; /* Adjust this value if needed */
     overflow-y: auto; /* Enables vertical scrollbar */
     padding: 20px;
+}
+
+.news-text{
+    width:auto;
+    display:flex;
+    flex-direction:column;
 }

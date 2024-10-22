@@ -38,14 +38,14 @@
                     <img src="images/challenger.PNG" class="bttn" onclick="showGroupPopup()" />
                     <div class="hover-text">Challenger</div>
                 </div>
-                
+
                 <div class="image-container">
                     <img src="images/veteran.PNG" class="bttn" onclick="showGroupPopup()" />
                     <div class="hover-text">Veteran</div>
                 </div>
                 <div class="image-container">
                     <img src="images/enlightened.png" class="bttn" onclick="showGroupPopup()" />
-                    <div class="hover-text">Explorer</div>
+                    <div class="hover-text">Enlightened</div>
                 </div>
 
             </div>
@@ -53,7 +53,7 @@
 
         </div>
 
-        
+
     </section>
 
     <img class="gear-icon" src="images/gears.gif" alt="Settings Gear" onclick="showPopup('settings')">
@@ -64,6 +64,12 @@
         <div class="popup-content">
             <span class="close" onclick="closePopup('popup')">&times;</span>
             <p id="popup-text"></p>
+            <p>Change the font size</p>
+            <img src="images/textsize.gif" style="width:auto;height:80px" />
+            <p>Change the weight of the text</p>
+            <img src="images/sliding bar.gif" />
+            <p>Change the colour scheme of the page</p>
+            <img src="images/images.png" style="width:auto;height:100px" />
         </div>
     </div>
 
@@ -71,15 +77,24 @@
     <div id="group-popup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="closePopup('group-popup')">&times;</span>
-            <p >Do you want to learn with a friend?</p>
+            <p>Do you want to learn with a friend?</p>
             <div class="container-3">
-                <button >yes</button>
+                <button onclick="showFindFriendPopup()">yes</button>
                 <button onclick="openPath('englishlearningpath.html')">no</button>
             </div>
 
         </div>
     </div>
 
+    <!--Popup container (initially hidden)-->
+    <div id="ff-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('ff-popup')">&times;</span>
+            <p>Find your friend ?</p>
+            <p></p>
+            <img src="images/friends.png" />
+        </div>
+    </div>
     <footer>
         <p>&copy; All rights reserved to with HCI group 24</p>
     </footer>
