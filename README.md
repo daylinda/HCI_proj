@@ -1,2 +1,2 @@
 # HCI_proj
-Mid fedelity website layout for HCI
+Academic Project - Mid fedelity website layout for HCI
